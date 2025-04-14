@@ -663,9 +663,30 @@ require('lazy').setup({
       --  - settings (table): Override the default settings passed when initializing the server.
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
+        java_language_server = {},
+        jsonls = {},
+        ltex = {},
         -- clangd = {},
         -- gopls = {},
-        -- pyright = {},
+        pyright = {
+          settings = {
+            pyright = {
+              autoImportCompletion = true,
+            },
+            python = {
+              analysis = {
+                extraPaths = {
+                  vim.fn.getcwd() .. '/.venv/lib/python3.11/site-packages',
+                },
+                autoSearchPaths = true,
+                diagnosticMode = 'openFilesOnly',
+                useLibraryCodeForTypes = true,
+                typeCheckingMode = 'off',
+              },
+            },
+            verboseOutput = true,
+          },
+        },
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
