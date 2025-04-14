@@ -667,7 +667,8 @@ require('lazy').setup({
         jsonls = {},
         ltex = {},
         -- clangd = {},
-        -- gopls = {},
+        gopls = {},
+        tflint = {},
         pyright = {
           settings = {
             pyright = {
