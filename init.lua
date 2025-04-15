@@ -669,6 +669,7 @@ require('lazy').setup({
         -- clangd = {},
         gopls = {},
         tflint = {},
+        terraformls = {},
         pyright = {
           settings = {
             pyright = {
@@ -677,6 +678,7 @@ require('lazy').setup({
             python = {
               analysis = {
                 extraPaths = {
+                  vim.fn.getcwd() .. '/.venv/lib/python3.10/site-packages',
                   vim.fn.getcwd() .. '/.venv/lib/python3.11/site-packages',
                   vim.fn.getcwd() .. '/.venv/lib/python3.12/site-packages',
                   vim.fn.getcwd() .. '/.venv/lib/python3.13/site-packages',
