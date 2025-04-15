@@ -970,6 +970,9 @@ require('lazy').setup({
       -- pair module
       require('mini.pairs').setup { ignore_blank_line = true }
 
+      -- move module
+      require('mini.move').setup()
+
       -- Simple and easy statusline.
       --  You could remove this setup call if you don't like it,
       --  and try some other statusline plugin
