@@ -678,6 +678,8 @@ require('lazy').setup({
               analysis = {
                 extraPaths = {
                   vim.fn.getcwd() .. '/.venv/lib/python3.11/site-packages',
+                  vim.fn.getcwd() .. '/.venv/lib/python3.12/site-packages',
+                  vim.fn.getcwd() .. '/.venv/lib/python3.13/site-packages',
                 },
                 autoSearchPaths = true,
                 diagnosticMode = 'openFilesOnly',
