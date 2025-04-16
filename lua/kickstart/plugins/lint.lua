@@ -8,7 +8,6 @@ return {
       lint.linters_by_ft = {
         terraform = { 'tflint' },
         json = { 'jsonlint' },
-        -- markdown = { 'mdl' },
       }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
