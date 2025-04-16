@@ -1005,7 +1005,7 @@ require('lazy').setup({
   --
   require 'plugins.multicursor',
   require 'plugins.neo-tree',
-
+  require 'plugins.dashboard',
   require 'plugins.treesitter',
   -- require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
