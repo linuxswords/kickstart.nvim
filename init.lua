@@ -507,6 +507,8 @@ require('lazy').setup({
       -- Thus, Language Servers are external tools that must be installed separately from
       -- Neovim. This is where `mason` and related plugins come into play.
       --
+      --
+      --
       -- If you're wondering about lsp vs treesitter, you can check out the wonderfully
       -- and elegantly composed help section, `:help lsp-vs-treesitter`
 
@@ -1024,6 +1026,7 @@ require('lazy').setup({
   require 'plugins.lint',
   require 'plugins.multicursor',
   require 'plugins.neo-tree',
+  require 'plugins.testing',
   require 'plugins.treesitter',
 
   -- require 'kickstart.plugins.indent_line',
