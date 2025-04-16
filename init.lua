@@ -972,7 +972,7 @@ require('lazy').setup({
       require('mini.surround').setup()
 
       -- move module
-      require('mini.move').setup()
+      -- require('mini.move').setup()
 
       -- Simple and easy statusline.
       --  You could remove this setup call if you don't like it,
