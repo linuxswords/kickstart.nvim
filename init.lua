@@ -652,7 +652,8 @@ require('lazy').setup({
       --  When you add blink.cmp, luasnip, etc. Neovim now has *more* capabilities.
       --  So, we create new capabilities with blink.cmp, and then broadcast that to the servers.
       local capabilities = require('blink.cmp').get_lsp_capabilities()
-
+      local completion_capabilites = require('cmp_nvim_lsp').default_capabilities()
+      capabilities = vim.tbl_deep_extend('force', {}, capabilities, completion_capabilites or {})
       -- Enable the following language servers
       --  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
       --
@@ -663,14 +664,27 @@ require('lazy').setup({
       --  - settings (table): Override the default settings passed when initializing the server.
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
-        java_language_server = {},
-        jsonls = {},
-        ltex = {},
+        java_language_server = {
+          capabilities = capabilities,
+        },
+        jsonls = {
+          capabilities = capabilities,
+        },
+        ltex = {
+          capabilities = capabilities,
+        },
         -- clangd = {},
-        gopls = {},
-        tflint = {},
-        terraformls = {},
+        gopls = {
+          capabilities = capabilities,
+        },
+        tflint = {
+          capabilities = capabilities,
+        },
+        terraformls = {
+          capabilities = capabilities,
+        },
         pyright = {
+          capabilities = capabilities,
           settings = {
             pyright = {
               autoImportCompletion = true,
@@ -702,6 +716,7 @@ require('lazy').setup({
         -- ts_ls = {},
         --
         dockerls = {
+          capabilities = capabilities,
           settings = {
             docker = { languageserver = { formatter = { ignoreMultilineInstructions = true } } },
           },
@@ -711,6 +726,7 @@ require('lazy').setup({
           -- cmd = { ... },
           -- filetypes = { ... },
           -- capabilities = {},
+          capabilities = capabilities,
           settings = {
             Lua = {
               completion = {
