@@ -1007,6 +1007,7 @@ require('lazy').setup({
   require 'plugins.neo-tree',
   require 'plugins.dashboard',
   require 'plugins.treesitter',
+  require 'plugins.completions',
   -- require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
   require 'kickstart.plugins.lint',
