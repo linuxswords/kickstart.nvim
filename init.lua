@@ -1026,8 +1026,9 @@ require('lazy').setup({
   require 'plugins.lint',
   require 'plugins.multicursor',
   require 'plugins.neo-tree',
-  require 'plugins.testing',
+  -- require 'plugins.testing',
   require 'plugins.treesitter',
+  require 'plugins.vim-test',
 
   -- require 'kickstart.plugins.indent_line',
   require 'kickstart.plugins.debug',
