@@ -666,9 +666,9 @@ require('lazy').setup({
       --  - settings (table): Override the default settings passed when initializing the server.
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
-        java_language_server = {
-          capabilities = capabilities,
-        },
+        -- java_language_server = {
+        --   capabilities = capabilities,
+        -- },
         jsonls = {
           capabilities = capabilities,
         },
