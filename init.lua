@@ -1027,7 +1027,6 @@ require('lazy').setup({
   require 'plugins.lint',
   require 'plugins.multicursor',
   require 'plugins.neo-tree',
-  -- require 'plugins.testing',
   require 'plugins.treesitter',
   require 'plugins.nvim-tmux-navigation',
   require 'plugins.vim-test',
