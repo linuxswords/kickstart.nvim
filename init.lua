@@ -1030,6 +1030,7 @@ require('lazy').setup({
   require 'plugins.treesitter',
   require 'plugins.nvim-tmux-navigation',
   require 'plugins.vim-test',
+  require 'plugins.aider',
 
   -- require 'kickstart.plugins.indent_line',
   require 'kickstart.plugins.debug',
