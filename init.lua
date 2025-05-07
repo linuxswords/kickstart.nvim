@@ -1024,21 +1024,11 @@ require('lazy').setup({
   --  Here are some example plugins that I've included in the Kickstart repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
-  require 'plugins.completions',
-  require 'plugins.dashboard',
-  require 'plugins.lint',
-  require 'plugins.multicursor',
-  require 'plugins.neo-tree',
-  require 'plugins.treesitter',
-  require 'plugins.nvim-tmux-navigation',
-  require 'plugins.vim-test',
-  require 'plugins.aider',
-
-  -- require 'kickstart.plugins.indent_line',
-  require 'kickstart.plugins.debug',
-  require 'kickstart.plugins.lint',
-  require 'kickstart.plugins.autopairs',
-  require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
+  -- { import = 'kickstart.plugins.indent_line'},
+  { import = 'kickstart.plugins.debug' },
+  { import = 'kickstart.plugins.lint' },
+  { import = 'kickstart.plugins.autopairs' },
+  { import = 'kickstart.plugins.gitsigns' }, -- adds gitsigns recommend keymap},
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
@@ -1047,6 +1037,16 @@ require('lazy').setup({
   -- { import = 'custom.plugins' },
   { import = 'plugins.fstring' },
   { import = 'plugins.lazygit' },
+
+  { import = 'plugins.completions' },
+  { import = 'plugins.dashboard' },
+  { import = 'plugins.multicursor' },
+  { import = 'plugins.neo-tree' },
+  { import = 'plugins.treesitter' },
+  { import = 'plugins.nvim-tmux-navigation' },
+  { import = 'plugins.vim-test' },
+  { import = 'plugins.aider' },
+
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
   -- In normal mode type `<space>sh` then write `lazy.nvim-plugin`
