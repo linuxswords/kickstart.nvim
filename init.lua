@@ -164,6 +164,8 @@ vim.opt.confirm = true
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
+vim.keymap.set('n', '<F4>', ':w<Cr>')
+vim.keymap.set('i', '<F4>', '<Esc><F4>')
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
