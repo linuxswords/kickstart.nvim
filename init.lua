@@ -167,6 +167,10 @@ vim.opt.confirm = true
 vim.keymap.set('n', '<F4>', ':w<Cr>')
 vim.keymap.set('i', '<F4>', '<Esc><F4>')
 
+-- keymap for writing buffer
+vim.keymap.set('i', '<F4>', '<Esc><F4>')
+vim.keymap.set('n', '<F4>', ':w<Cr>')
+
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
