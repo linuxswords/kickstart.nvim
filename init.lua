@@ -164,9 +164,7 @@ vim.opt.confirm = true
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
-vim.keymap.set('n', '<F4>', ':w<Cr>')
-vim.keymap.set('i', '<F4>', '<Esc><F4>')
-
+--
 -- keymap for writing buffer
 vim.keymap.set('i', '<F4>', '<Esc><F4>')
 vim.keymap.set('n', '<F4>', ':w<Cr>')
