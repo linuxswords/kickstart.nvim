@@ -1041,7 +1041,7 @@ require('lazy').setup({
   -- { import = 'custom.plugins' },
   { import = 'plugins.fstring' },
   { import = 'plugins.lazygit' },
-
+  { import = 'plugins.lint' },
   { import = 'plugins.completions' },
   { import = 'plugins.dashboard' },
   { import = 'plugins.multicursor' },
@@ -1050,6 +1050,7 @@ require('lazy').setup({
   { import = 'plugins.nvim-tmux-navigation' },
   { import = 'plugins.vim-test' },
   { import = 'plugins.aider' },
+  { import = 'plugins.multiline' },
 
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
