@@ -1044,7 +1044,6 @@ require('lazy').setup({
   { import = 'plugins.lint' },
   { import = 'plugins.completions' },
   { import = 'plugins.dashboard' },
-  { import = 'plugins.multicursor' },
   { import = 'plugins.neo-tree' },
   { import = 'plugins.treesitter' },
   { import = 'plugins.nvim-tmux-navigation' },
