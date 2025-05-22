@@ -164,7 +164,6 @@ vim.opt.confirm = true
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
---
 -- keymap for writing buffer
 vim.keymap.set('n', '<F4>', ':w<Cr>')
 vim.keymap.set('i', '<F4>', '<Esc><F4><F4>')
@@ -265,23 +264,6 @@ require('lazy').setup({
   --        end,
   --    }
   --
-  -- Here is a more advanced example where we pass configuration
-  -- options to `gitsigns.nvim`.
-  --
-  -- See `:help gitsigns` to understand what the configuration keys do
-  { -- Adds git related signs to the gutter, as well as utilities for managing changes
-    'lewis6991/gitsigns.nvim',
-    opts = {
-      signs = {
-        add = { text = '+' },
-        change = { text = '~' },
-        delete = { text = '_' },
-        topdelete = { text = '‾' },
-        changedelete = { text = '~' },
-      },
-    },
-  },
-
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
   -- This is often very useful to both group configuration, as well as handle
@@ -1050,6 +1032,7 @@ require('lazy').setup({
   { import = 'plugins.vim-test' },
   { import = 'plugins.aider' },
   { import = 'plugins.multiline' },
+  { import = 'plugins.gitsigns' },
 
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
