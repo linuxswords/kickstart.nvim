@@ -154,7 +154,7 @@ vim.opt.confirm = true
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
-opt.smartcase = true
+vim.opt.smartcase = true
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 -- vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
