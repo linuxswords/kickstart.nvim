@@ -8,7 +8,8 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 
 -- keep cursor in front when J-ing lines
 vim.keymap.set('n', 'J', 'mzJ`z')
--- keep cursor when searching
+
+-- keep cursor in the middle when searching
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
 
