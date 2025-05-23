@@ -69,7 +69,7 @@ vim.opt.confirm = true
 vim.opt.smartcase = true
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
--- vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'go t previous error' })
