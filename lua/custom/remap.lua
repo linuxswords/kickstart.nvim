@@ -1,6 +1,6 @@
 -- keymap for writing buffer
 vim.keymap.set('n', '<F4>', ':w<Cr>')
-vim.keymap.set('i', '<F4>', '<Esc><F4><F4>')
+vim.keymap.set('i', '<F4>', '<Esc>:w<Cr>')
 
 -- move lines up/down
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
