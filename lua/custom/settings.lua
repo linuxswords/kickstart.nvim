@@ -7,7 +7,6 @@ vim.opt.relativenumber = true
 -- martin rather has case sensitive search
 vim.opt.ignorecase = false
 vim.opt.smartcase = true
-vim.opt.smartindent = true
 
 -- search
 vim.opt.hlsearch = true
@@ -17,3 +16,11 @@ vim.opt.signcolumn = 'yes'
 
 -- keep n lines visible above and below the cursor
 vim.opt.scrolloff = 8
+
+-- indent setting
+vim.opt.tabstop = 4
+vim.opt.softtabstop = -1
+vim.opt.shiftwidth = 0
+vim.opt.smartindent = true
+vim.opt.autoindent = true
+vim.opt.expandtab = true
