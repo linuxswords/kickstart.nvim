@@ -5,7 +5,31 @@ return {
     'nvim-treesitter/nvim-treesitter',
   },
   lazy = false,
-  opts = {},
+  opts = {
+    prompt_func_return_type = {
+      go = true,
+      java = true,
+
+      cpp = false,
+      c = false,
+      h = false,
+      hpp = false,
+      cxx = false,
+    },
+    prompt_func_param_type = {
+      go = true,
+      java = true,
+
+      cpp = false,
+      c = false,
+      h = false,
+      hpp = false,
+      cxx = false,
+    },
+    printf_statements = {},
+    print_var_statements = {},
+    show_success_message = true,
+  },
   config = function()
     vim.keymap.set({ 'n', 'x' }, '<leader>re', function()
       return require('refactoring').refactor 'Extract Function'
