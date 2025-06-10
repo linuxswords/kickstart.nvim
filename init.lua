@@ -620,6 +620,7 @@ require('lazy').setup({
   { import = 'plugins.aider' },
   { import = 'plugins.multiline' },
   { import = 'plugins.gitsigns' },
+  { import = 'plugins.copilot' },
 
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
