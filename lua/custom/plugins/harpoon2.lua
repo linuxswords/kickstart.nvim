@@ -16,10 +16,10 @@ return {
       harpoon.ui:toggle_quick_menu(harpoon:list())
     end, { desc = 'Harpoon: quick menu list' })
 
-    vim.keymap.set('n', '<C-h>', function()
+    vim.keymap.set('n', '<C-t>', function()
       harpoon:list():select(1)
     end, { desc = 'Harpoon select 1' })
-    vim.keymap.set('n', '<C-t>', function()
+    vim.keymap.set('n', '<C-i>', function()
       harpoon:list():select(2)
     end, { desc = 'Harpoon select 2' })
     vim.keymap.set('n', '<C-n>', function()
