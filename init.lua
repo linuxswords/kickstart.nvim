@@ -621,6 +621,7 @@ require('lazy').setup({
   { import = 'plugins.multiline' },
   { import = 'plugins.gitsigns' },
   { import = 'plugins.copilot' },
+  { import = 'plugins.vimgolf' },
 
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
