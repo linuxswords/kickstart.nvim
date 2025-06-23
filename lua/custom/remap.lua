@@ -24,3 +24,6 @@ vim.keymap.set('v', '<leader>y', '"+y')
 vim.keymap.set('n', '<leader>Y', '"+Y')
 
 vim.keymap.set('n', '<leader>x', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = 'Replace word under cursor' })
+
+-- easier write
+vim.keymap.set('n', '<leader>w', ':w<Cr>', { desc = 'Write buffer' })
