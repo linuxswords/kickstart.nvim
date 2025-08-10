@@ -608,22 +608,22 @@ require('lazy').setup({
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   { import = 'custom.plugins' },
-  { import = 'plugins.fstring' },
+
+  { import = 'plugins.aider' },
   { import = 'plugins.claude' },
+  { import = 'plugins.completions' },
+  { import = 'plugins.copilot' },
+  { import = 'plugins.dashboard' },
+  { import = 'plugins.fstring' },
+  { import = 'plugins.gitsigns' },
+  { import = 'plugins.golf' },
   { import = 'plugins.lazygit' },
   { import = 'plugins.lint' },
-  { import = 'plugins.completions' },
-  { import = 'plugins.dashboard' },
-  { import = 'plugins.neo-tree' },
-  { import = 'plugins.treesitter' },
-  { import = 'plugins.nvim-tmux-navigation' },
-  { import = 'plugins.vim-test' },
-  { import = 'plugins.aider' },
   { import = 'plugins.multiline' },
-  { import = 'plugins.gitsigns' },
-  { import = 'plugins.copilot' },
-  { import = 'plugins.golf' },
-
+  { import = 'plugins.neo-tree' },
+  { import = 'plugins.nvim-tmux-navigation' },
+  { import = 'plugins.treesitter' },
+  { import = 'plugins.vim-test' },
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
   -- In normal mode type `<space>sh` then write `lazy.nvim-plugin`
