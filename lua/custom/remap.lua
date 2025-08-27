@@ -7,7 +7,7 @@ vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 
 -- use fj to exit insert mode
-vim.keymap.set('i', 'fj', '<Esc>', { desc = 'Exit insert mode with jk' })
+vim.keymap.set('i', 'uh', '<Esc>', { desc = 'Exit insert mode with jk' })
 
 -- keep cursor in front when J-ing lines
 vim.keymap.set('n', 'J', 'mzJ`z')
